@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- jQuery本体↓ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQueryが書いてあるファイル↓ -->
+    <script src="./js/script.js">
+    <script type="text/javascript" th:src="@{/demo.js}"></script>
+    <title>Title</title>
+</head>
+<body>
+SOUND
+
+
+
+<form method="post">
+    <div th:each="item:${checkboxItems}">
+        <input type="checkbox" name="inputMultiCheck" th:value="${item.key}" th:text="${item.value}"/>
+    </div>
+    <div>
+        <input type="submit" value="start">
+    </div>
+</form>
+</body>
+</html>

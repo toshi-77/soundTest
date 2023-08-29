@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- jQuery本体↓ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQueryが書いてあるファイル↓ -->
+    <script src="./js/script.js">
+    <script type="text/javascript" th:src="@{/demo.js}"></script>
+    <title>Title</title>
+</head>
+<body>
+    submitやbuttonをブラウザ別に確認するための画面です。
+    <br/><br/>
+    <form id="form1" method="post" th:action="@{/method1}"}>
+        <input type="submit" id="btn1" value="ボタン１(input type='submit')"
+               onclick="testClick(this);" />
+    </form>
+    <br/>
+    <form id="form2" method="post" th:action="@{/method2}"}>
+        <input type="submit" id="btn2" value="ボタン２(input type='submit')"
+               onclick="testClick(this);" />
+    </form>
+    <br/><br/>
+</body>
+</html>

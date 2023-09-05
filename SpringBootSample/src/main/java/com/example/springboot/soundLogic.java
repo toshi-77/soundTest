@@ -24,7 +24,7 @@ public class soundLogic {
         AudioInputStream ais = null;
 
         try{
-            ais = AudioSystem.getAudioInputStream(new File("C:\\Windows\\Media\\" + code));
+            ais = AudioSystem.getAudioInputStream(new File("C:\\training\\SpringBootSample\\src\\main\\resources\\wav\\" + code));
 
             AudioFormat af = ais.getFormat();
             DataLine.Info info = new DataLine.Info(Clip.class, af);

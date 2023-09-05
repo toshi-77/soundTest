@@ -61,7 +61,8 @@ public class soundCheckBoxController {
         selectMap.put("Gis4.wav","Gis4.wav");
         selectMap.put("A4.wav","A4.wav");
         selectMap.put("Ais4.wav","Ais4.wav");
-        selectMap.put("H5.wav","H5.wav");
+        selectMap.put("H4.wav","H4.wav");
+        selectMap.put("C5.wav","C5.wav");
         return selectMap;
     }
 
